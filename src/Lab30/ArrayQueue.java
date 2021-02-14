@@ -10,6 +10,7 @@ public class ArrayQueue extends AbstractQueue implements Queue {
         elements[(head + size) % elements.length] = element;
     }
 
+
     private void ensureCapacity(int capacity) {
         if (capacity <= elements.length) {
             return;
